@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "4e9af955-ef9a-49d8-8390-c2db5d543987",
+    "name": "practical assessment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "22943149",
+    "_collection_link": "https://go.postman.co/collection/22943149-4e9af955-ef9a-49d8-8390-c2db5d543987?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "create customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"firstName\": \"sammy\",\n    \"lastName\": \"ocharo\",\n    \"email\": \"test@gmail.com\",\n    \"phoneNumber\": \"254700000000\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "127.0.0.1:8080/api/v1/customer/create/",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "customer",
+            "create",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "perform transfer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"senderAccountNumber\": \"1000000001\",\n    \"receiverAccountNumber\": \"10000000002\",\n    \"amount\": 100.00\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "127.0.0.1:8080/api/v1/customer_transaction/transfer_funds/",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "customer_transaction",
+            "transfer_funds",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get customer",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "127.0.0.1:8080/api/v1/customer/1/",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "customer",
+            "1",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
